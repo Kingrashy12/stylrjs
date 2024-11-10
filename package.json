@@ -1,6 +1,6 @@
 {
   "name": "stylrjs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A Lightweight CSS-In-JS library for React",
   "type": "module",
   "main": "dist/stylrjs.cjs.js",
