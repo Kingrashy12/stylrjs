@@ -6,10 +6,10 @@
 </p>
 
 [![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/stylrjs.svg?style=social&label=Star)](https://github.com/Kingrashy12/stylrjs)
-[![npm version](https://img.shields.io/npm/v/stylrjs-react.svg)](https://www.npmjs.com/package/stylrjs-react)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/stylrjs-react)](https://bundlephobia.com/result?p=stylrjs-react)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/stylrjs-react/blob/main/LICENSE)
-[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/stylrjs-react)
+[![npm version](https://img.shields.io/npm/v/stylrjs.svg)](https://www.npmjs.com/package/stylrjs)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/stylrjs)](https://bundlephobia.com/result?p=stylrjs)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/stylrjs/blob/main/LICENSE)
+[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/stylrjs)
 
 [Documentation](https://github.com/Kingrashy12/stylrjs/wiki) | [API Reference](https://github.com/Kingrashy12/stylrjs#api-reference) | [Contributing](https://github.com/Kingrashy12/stylrjs/blob/main/CONTRIBUTING.MD) | [Issues](https://github.com/Kingrashy12/stylrjs/issues)
 
