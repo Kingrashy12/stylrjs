@@ -7,7 +7,7 @@
   <h4> A Lightweight CSS-In-JS library for React </h4>
 </p>
 
-[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs-react.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs-react)
+[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs-react.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs)
 [![npm version](https://img.shields.io/npm/v/chromajs-react.svg)](https://www.npmjs.com/package/chromajs-react)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/chromajs-react)](https://bundlephobia.com/result?p=chromajs-react)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/chromajs-react/blob/main/LICENSE)
