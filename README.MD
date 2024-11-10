@@ -3,15 +3,15 @@
 <div align="center">
 
 <p align="center">
-  <img src="https://github.com/Kingrashy12/chromajs/blob/main/images/chromajs-logo.png" alt="Chromajs" width="200" height="200">
+  <img src="https://github.com/Kingrashy12/chromajs/blob/main/images/chromajs.png" alt="Chromajs" width="200" height="200">
   <h4> A Lightweight CSS-In-JS library for React </h4>
 </p>
 
-[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs)
-[![npm version](https://img.shields.io/npm/v/chromajs.svg)](https://www.npmjs.com/package/chromajs)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/chromajs)](https://bundlephobia.com/result?p=chromajs)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/chromajs/blob/main/LICENSE)
-[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/chromajs)
+[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs-react.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs-react)
+[![npm version](https://img.shields.io/npm/v/chromajs-react.svg)](https://www.npmjs.com/package/chromajs-react)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/chromajs-react)](https://bundlephobia.com/result?p=chromajs-react)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/chromajs-react/blob/main/LICENSE)
+[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/chromajs-react)
 
 [Documentation](https://github.com/Kingrashy12/chromajs/wiki) | [API Reference](https://github.com/Kingrashy12/chromajs#api-reference) | [Contributing](https://github.com/Kingrashy12/chromajs/blob/main/CONTRIBUTING.MD) | [Issues](https://github.com/Kingrashy12/chromajs/issues)
 
