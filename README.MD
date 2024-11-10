@@ -1,13 +1,11 @@
----
-
 <div align="center">
 
 <p align="center">
-  <img src="https://github.com/Kingrashy12/chromajs/blob/main/images/chromajs.png" alt="Chromajs" width="200" height="200">
+  <img src="https://github.com/Kingrashy12/chromajs/blob/main/images/chromajs.png" alt="Chromajs" width="150" height="150">
   <h4> A Lightweight CSS-In-JS library for React </h4>
 </p>
 
-[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs-react.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs)
+[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs)
 [![npm version](https://img.shields.io/npm/v/chromajs-react.svg)](https://www.npmjs.com/package/chromajs-react)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/chromajs-react)](https://bundlephobia.com/result?p=chromajs-react)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/chromajs-react/blob/main/LICENSE)
@@ -41,13 +39,13 @@
 npm:
 
 ```bash
-npm install chromajs
+npm install chromajs-react
 ```
 
 yarn:
 
 ```bash
-yarn add chromajs
+yarn add chromajs-react
 ```
 
 ## Features
@@ -66,7 +64,7 @@ yarn add chromajs
 Basic example:
 
 ```tsx
-import { styled } from "chromajs";
+import { styled } from "chromajs-react";
 
 const Button = styled("button")`
   background-color: blue;
@@ -86,7 +84,7 @@ chromajs is fully compatible with TypeScript and provides type definitions for a
 1. Basic usage with inferred types:
 
 ```tsx
-import { styled } from "chromajs";
+import { styled } from "chromajs-react";
 
 const Button = styled("button")`
   background-color: blue;
@@ -100,7 +98,7 @@ const Button = styled("button")`
 2. Extending HTML element props:
 
 ```tsx
-import { styled } from "chromajs";
+import { styled } from "chromajs-react";
 
 interface CustomButtonProps {
   isActive?: boolean;
@@ -121,7 +119,7 @@ const Button = styled<CustomButtonProps>("button")`
 3. Using with custom components:
 
 ```tsx
-import { styled } from "chromajs";
+import { styled } from "chromajs-react";
 import { ComponentProps } from "react";
 
 const CustomComponent = ({
@@ -243,7 +241,7 @@ chromajs exports type definitions for all HTML elements. You can import these ty
 You can use these types to extend the props of your styled components or to type-check your components. For example:
 
 ```tsx
-import { styled, ButtonProps } from "chromajs";
+import { styled, ButtonProps } from "chromajs-react";
 
 interface CustomButtonProps extends ButtonProps {
   isActive?: boolean;

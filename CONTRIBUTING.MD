@@ -1,4 +1,4 @@
-# Contributing to styled-chroma
+# Contributing to chromajs
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
@@ -12,7 +12,7 @@ We love your input! We want to make contributing to this project as easy and tra
 
 We use github to host code, to track issues and feature requests, as well as accept pull requests.
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), All Code Changes Happen Through Pull Requests
 
 Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests:
 
@@ -27,9 +27,9 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 
 In short, when you submit code changes, your submissions are understood to be under the same [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using Github's [issues](https://github.com/SecptrumLab/styled-chroma/issues)
+## Report bugs using Github's [issues](https://github.com/Kingrashy12/chromajs/issues)
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/SecptrumLab/styled-chroma/issues/new); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/Kingrashy12/chromajs/issues/new); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
 
@@ -42,11 +42,6 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 - What you expected would happen
 - What actually happens
 - Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
-
-## Use a Consistent Coding Style
-
-- 2 spaces for indentation rather than tabs
-- You can try running `npm run lint` for style unification
 
 ## License
 
