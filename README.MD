@@ -1,17 +1,17 @@
 <div align="center">
 
 <p align="center">
-  <img src="https://github.com/Kingrashy12/chromajs/blob/main/images/chromajs.png" alt="Chromajs" width="150" height="150">
+  <img src="https://github.com/Kingrashy12/stylrjs/blob/main/images/stylrjs.png" alt="StylrJS" width="150" height="150">
   <h4> A Lightweight CSS-In-JS library for React </h4>
 </p>
 
-[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs)
-[![npm version](https://img.shields.io/npm/v/chromajs-react.svg)](https://www.npmjs.com/package/chromajs-react)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/chromajs-react)](https://bundlephobia.com/result?p=chromajs-react)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/chromajs-react/blob/main/LICENSE)
-[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/chromajs-react)
+[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/stylrjs.svg?style=social&label=Star)](https://github.com/Kingrashy12/stylrjs)
+[![npm version](https://img.shields.io/npm/v/stylrjs-react.svg)](https://www.npmjs.com/package/stylrjs-react)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/stylrjs-react)](https://bundlephobia.com/result?p=stylrjs-react)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/stylrjs-react/blob/main/LICENSE)
+[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/stylrjs-react)
 
-[Documentation](https://github.com/Kingrashy12/chromajs/wiki) | [API Reference](https://github.com/Kingrashy12/chromajs#api-reference) | [Contributing](https://github.com/Kingrashy12/chromajs/blob/main/CONTRIBUTING.MD) | [Issues](https://github.com/Kingrashy12/chromajs/issues)
+[Documentation](https://github.com/Kingrashy12/stylrjs/wiki) | [API Reference](https://github.com/Kingrashy12/stylrjs#api-reference) | [Contributing](https://github.com/Kingrashy12/stylrjs/blob/main/CONTRIBUTING.MD) | [Issues](https://github.com/Kingrashy12/stylrjs/issues)
 
 </div>
 
@@ -39,13 +39,13 @@
 npm:
 
 ```bash
-npm install chromajs-react
+npm install stylrjs
 ```
 
 yarn:
 
 ```bash
-yarn add chromajs-react
+yarn add stylrjs
 ```
 
 ## Features
@@ -64,7 +64,7 @@ yarn add chromajs-react
 Basic example:
 
 ```tsx
-import { styled } from "chromajs-react";
+import { styled } from "stylrjs";
 
 const Button = styled("button")`
   background-color: blue;
@@ -79,12 +79,12 @@ export default Button;
 
 ## Using With Types
 
-chromajs is fully compatible with TypeScript and provides type definitions for all HTML elements. Here's how you can use it with types:
+StylrJS is fully compatible with TypeScript and provides type definitions for all HTML elements. Here's how you can use it with types:
 
 1. Basic usage with inferred types:
 
 ```tsx
-import { styled } from "chromajs-react";
+import { styled } from "stylrjs";
 
 const Button = styled("button")`
   background-color: blue;
@@ -98,7 +98,7 @@ const Button = styled("button")`
 2. Extending HTML element props:
 
 ```tsx
-import { styled } from "chromajs-react";
+import { styled } from "stylrjs";
 
 interface CustomButtonProps {
   isActive?: boolean;
@@ -119,7 +119,7 @@ const Button = styled<CustomButtonProps>("button")`
 3. Using with custom components:
 
 ```tsx
-import { styled } from "chromajs-react";
+import { styled } from "stylrjs";
 import { ComponentProps } from "react";
 
 const CustomComponent = ({
@@ -150,11 +150,11 @@ const StyledCustomComponent = styled<StyledCustomComponentProps>(
 </StyledCustomComponent>;
 ```
 
-By leveraging TypeScript with chromajs, you get full type checking for your styled components, including autocomplete for HTML attributes and custom props.
+By leveraging TypeScript with StylrJS, you get full type checking for your styled components, including autocomplete for HTML attributes and custom props.
 
 ## Exported Types
 
-chromajs exports type definitions for all HTML elements. You can import these types from `chromajs/dist/types`. Here's a list of all exported types:
+StylrJS exports type definitions for all HTML elements. You can import these types from `stylrjs`. Here's a list of all exported types:
 
 - `ButtonProps`
 - `AnchorProps`
@@ -241,7 +241,7 @@ chromajs exports type definitions for all HTML elements. You can import these ty
 You can use these types to extend the props of your styled components or to type-check your components. For example:
 
 ```tsx
-import { styled, ButtonProps } from "chromajs-react";
+import { styled, ButtonProps } from "stylrjs";
 
 interface CustomButtonProps extends ButtonProps {
   isActive?: boolean;
@@ -276,11 +276,11 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE
 
 ## Issues
 
-If you find any issues, please open an issue on the [GitHub repository](https://github.com/Kingrashy12/chromajs/issues).
+If you find any issues, please open an issue on the [GitHub repository](https://github.com/Kingrashy12/StylrJS/issues).
 
 ## Contributing
 
-We welcome contributions to chromajs! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+We welcome contributions to StylrJS! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 For more detailed information on how to contribute, please read our [CONTRIBUTING.md](CONTRIBUTING.md) guide.
 

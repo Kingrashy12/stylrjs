@@ -1,16 +1,16 @@
 {
-  "name": "chromajs-react",
-  "version": "0.1.1",
+  "name": "stylrjs",
+  "version": "0.1.0",
   "description": "A Lightweight CSS-In-JS library for React",
   "type": "module",
-  "main": "dist/chromajs.cjs.js",
-  "module": "dist/chromajs.es.js",
-  "browser": "dist/chromajs.umd.js",
+  "main": "dist/stylrjs.cjs.js",
+  "module": "dist/stylrjs.es.js",
+  "browser": "dist/stylrjs.umd.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/chromajs.es.js",
-      "require": "./dist/chromajs.cjs.js",
+      "import": "./dist/stylrjs.es.js",
+      "require": "./dist/stylrjs.cjs.js",
       "types": "./dist/index.d.ts"
     }
   },
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kingrashy12/chromajs.git"
+    "url": "git+https://github.com/Kingrashy12/stylrjs.git"
   },
   "keywords": [
     "styling",
@@ -36,9 +36,9 @@
   "author": "Rapheal Chizitere",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Kingrashy12/chromajs/issues"
+    "url": "https://github.com/Kingrashy12/stylrjs/issues"
   },
-  "homepage": "https://github.com/Kingrashy12/chromajs/wiki",
+  "homepage": "https://github.com/Kingrashy12/stylrjs/wiki",
   "devDependencies": {
     "@babel/preset-env": "^7.25.7",
     "@babel/preset-react": "^7.25.7",
