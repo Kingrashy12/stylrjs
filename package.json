@@ -1,16 +1,16 @@
 {
-  "name": "styled-chroma",
-  "version": "0.1.77",
-  "description": "A flexible styling library for React that brings simplicity and power to your component design",
+  "name": "chromajs-react",
+  "version": "0.1.0",
+  "description": "A Lightweight CSS-In-JS library for React",
   "type": "module",
-  "main": "dist/styled-chroma.cjs.js",
-  "module": "dist/styled-chroma.es.js",
-  "browser": "dist/styled-chroma.umd.js",
+  "main": "dist/chromajs.cjs.js",
+  "module": "dist/chromajs.es.js",
+  "browser": "dist/chromajs.umd.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/styled-chroma.es.js",
-      "require": "./dist/styled-chroma.cjs.js",
+      "import": "./dist/chromajs.es.js",
+      "require": "./dist/chromajs.cjs.js",
       "types": "./dist/index.d.ts"
     }
   },
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kingrashy12/styled-chroma.git"
+    "url": "git+https://github.com/Kingrashy12/chromajs.git"
   },
   "keywords": [
     "styling",
@@ -36,9 +36,9 @@
   "author": "Rapheal Chizitere",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Kingrashy12/styled-chroma/issues"
+    "url": "https://github.com/Kingrashy12/chromajs/issues"
   },
-  "homepage": "https://github.com/Kingrashy12/styled-chroma/wiki",
+  "homepage": "https://github.com/Kingrashy12/chromajs/wiki",
   "devDependencies": {
     "@babel/preset-env": "^7.25.7",
     "@babel/preset-react": "^7.25.7",

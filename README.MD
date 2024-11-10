@@ -3,22 +3,22 @@
 <div align="center">
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a71166b5-8c14-4c83-8cb8-0ca17478bde2" alt="Styled Chroma Logo" width="200" height="200">
-  <h4> A flexible styling library for React that brings simplicity and power to your component design </h4>
+  <img src="https://github.com/Kingrashy12/chromajs/blob/main/images/chromajs-logo.png" alt="Chromajs" width="200" height="200">
+  <h4> A Lightweight CSS-In-JS library for React </h4>
 </p>
 
-[![GitHub stars](https://img.shields.io/github/stars/SecptrumLab/styled-chroma.svg?style=social&label=Star)](https://github.com/SecptrumLab/styled-chroma)
-[![npm version](https://img.shields.io/npm/v/styled-chroma.svg)](https://www.npmjs.com/package/styled-chroma)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/styled-chroma)](https://bundlephobia.com/result?p=styled-chroma)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/SecptrumLab/styled-chroma/blob/main/LICENSE)
-[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/styled-chroma)
+[![GitHub stars](https://img.shields.io/github/stars/Kingrashy12/chromajs.svg?style=social&label=Star)](https://github.com/Kingrashy12/chromajs)
+[![npm version](https://img.shields.io/npm/v/chromajs.svg)](https://www.npmjs.com/package/chromajs)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/chromajs)](https://bundlephobia.com/result?p=chromajs)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Kingrashy12/chromajs/blob/main/LICENSE)
+[![module formats](https://img.shields.io/badge/module%20formats-ESM%2FCJS%2FUMD-blue)](https://www.npmjs.com/package/chromajs)
 
-[Documentation](https://github.com/SecptrumLab/styled-chroma/wiki) | [API Reference](https://github.com/SecptrumLab/styled-chroma#api-reference) | [Contributing](https://github.com/SecptrumLab/styled-chroma/blob/main/CONTRIBUTING.MD) | [Issues](https://github.com/SecptrumLab/styled-chroma/issues)
+[Documentation](https://github.com/Kingrashy12/chromajs/wiki) | [API Reference](https://github.com/Kingrashy12/chromajs#api-reference) | [Contributing](https://github.com/Kingrashy12/chromajs/blob/main/CONTRIBUTING.MD) | [Issues](https://github.com/Kingrashy12/chromajs/issues)
 
 </div>
 
 <p align="center">
-  <sub>Built with ❤️ by the Secptrum Lab team. Licensed under the Apache License 2.0.</sub>
+  <sub>Built with ❤️ by <a href="https://github.com/Kingrashy12">@Kingrashy12</a>. Licensed under the Apache License 2.0.</sub>
 </p>
 
 ##
@@ -41,13 +41,13 @@
 npm:
 
 ```bash
-npm install styled-chroma
+npm install chromajs
 ```
 
 yarn:
 
 ```bash
-yarn add styled-chroma
+yarn add chromajs
 ```
 
 ## Features
@@ -66,7 +66,7 @@ yarn add styled-chroma
 Basic example:
 
 ```tsx
-import { styled } from "styled-chroma";
+import { styled } from "chromajs";
 
 const Button = styled("button")`
   background-color: blue;
@@ -81,12 +81,12 @@ export default Button;
 
 ## Using With Types
 
-styled-chroma is fully compatible with TypeScript and provides type definitions for all HTML elements. Here's how you can use it with types:
+chromajs is fully compatible with TypeScript and provides type definitions for all HTML elements. Here's how you can use it with types:
 
 1. Basic usage with inferred types:
 
 ```tsx
-import { styled } from "styled-chroma";
+import { styled } from "chromajs";
 
 const Button = styled("button")`
   background-color: blue;
@@ -100,7 +100,7 @@ const Button = styled("button")`
 2. Extending HTML element props:
 
 ```tsx
-import { styled } from "styled-chroma";
+import { styled } from "chromajs";
 
 interface CustomButtonProps {
   isActive?: boolean;
@@ -121,7 +121,7 @@ const Button = styled<CustomButtonProps>("button")`
 3. Using with custom components:
 
 ```tsx
-import { styled } from "styled-chroma";
+import { styled } from "chromajs";
 import { ComponentProps } from "react";
 
 const CustomComponent = ({
@@ -152,11 +152,11 @@ const StyledCustomComponent = styled<StyledCustomComponentProps>(
 </StyledCustomComponent>;
 ```
 
-By leveraging TypeScript with styled-chroma, you get full type checking for your styled components, including autocomplete for HTML attributes and custom props.
+By leveraging TypeScript with chromajs, you get full type checking for your styled components, including autocomplete for HTML attributes and custom props.
 
 ## Exported Types
 
-styled-chroma exports type definitions for all HTML elements. You can import these types from `styled-chroma/dist/types`. Here's a list of all exported types:
+chromajs exports type definitions for all HTML elements. You can import these types from `chromajs/dist/types`. Here's a list of all exported types:
 
 - `ButtonProps`
 - `AnchorProps`
@@ -243,7 +243,7 @@ styled-chroma exports type definitions for all HTML elements. You can import the
 You can use these types to extend the props of your styled components or to type-check your components. For example:
 
 ```tsx
-import { styled, ButtonProps } from "styled-chroma";
+import { styled, ButtonProps } from "chromajs";
 
 interface CustomButtonProps extends ButtonProps {
   isActive?: boolean;
@@ -278,11 +278,11 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE
 
 ## Issues
 
-If you find any issues, please open an issue on the [GitHub repository](https://github.com/SecptrumLab/styled-chroma/issues).
+If you find any issues, please open an issue on the [GitHub repository](https://github.com/Kingrashy12/chromajs/issues).
 
 ## Contributing
 
-We welcome contributions to styled-chroma! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+We welcome contributions to chromajs! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 For more detailed information on how to contribute, please read our [CONTRIBUTING.md](CONTRIBUTING.md) guide.
 

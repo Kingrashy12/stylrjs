@@ -51,6 +51,8 @@ export type SystemTheme = {
   [key: string]: any; // General catch-all for any additional custom properties
 };
 
+export type Mode = "light" | "dark";
+
 export type ContextProviderType = {
   children: React.ReactNode;
 };

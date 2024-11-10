@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { SystemTheme, Theme, ThemeContextType } from "../types/local";
+import { Mode, SystemTheme, Theme, ThemeContextType } from "../types/local";
 import { modeColors } from "../utils/colors";
 import deepmerge from "../utils/deepmerge";
+import { storageActions } from "./useStorage";
 
 const systemTheme: SystemTheme = {
   defaultLightTheme: {
@@ -107,11 +108,9 @@ const ThemeProvider = ({
   children: React.ReactNode;
   theme?: { light: Partial<Theme>; dark: Partial<Theme> };
 }) => {
-  const savedMode =
-    typeof window !== "undefined"
-      ? (localStorage?.getItem("styled-chroma-systemTheme") as "light" | "dark")
-      : "light";
-  const initialMode = savedMode ? savedMode : "light";
+  const savedMode = storageActions.get("sui-theme") as Mode;
+  const savedTheme = savedMode ? JSON.parse(savedMode) : "light";
+  const initialMode = savedTheme;
   // Set initial theme state
   const [theme, setTheme] = useState(
     deepmerge(
@@ -138,9 +137,7 @@ const ThemeProvider = ({
   const toggleTheme = () => {
     setMode((prevMode) => {
       const newMode = prevMode === "light" ? "dark" : "light";
-      if (typeof window !== "undefined") {
-        localStorage.setItem("styled-chroma-systemTheme", newMode);
-      }
+      storageActions.set("sui-theme", newMode);
       return newMode;
     });
   };
