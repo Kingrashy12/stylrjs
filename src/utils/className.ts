@@ -10,11 +10,11 @@ export function cls(
   className: string,
   props: any
 ) {
-  const sc = `sc-${
-    typeof tag === 'string' ? tag : tag.displayName || 'Component'
+  const sc = `Stylr_${
+    typeof tag === "string" ? tag : tag.displayName || "Component"
   }`;
-  if (typeof sc === 'string' && sc !== 'undefined') {
+  if (typeof sc === "string" && sc !== "undefined") {
     return `${className} ${props.className || sc}`;
   }
-  return '';
+  return "";
 }

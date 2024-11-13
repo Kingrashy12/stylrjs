@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useMemo } from "react";
 import { useTheme } from "./hooks/useTheme";
 import { generateRandomString } from "./utils/genString";

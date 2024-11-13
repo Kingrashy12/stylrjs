@@ -17,13 +17,13 @@ export default {
     {
       file: pkg.main,
       format: "cjs",
-      sourcemap: true,
+      sourcemap: false,
       exports: "named",
     },
     {
       file: pkg.module,
       format: "es",
-      sourcemap: true,
+      sourcemap: false,
       exports: "named",
     },
     // Add UMD build
@@ -36,7 +36,7 @@ export default {
         "react-dom": "ReactDOM",
         "react/jsx-runtime": "jsxRuntime",
       },
-      sourcemap: true,
+      sourcemap: false,
       exports: "named",
     },
   ],
@@ -58,5 +58,5 @@ export default {
     }),
     visualizer({ open: true, filename: "bundle-analysis.html" }),
   ],
-  external: ["react", "react-dom"],
+  external: ["react", "react-dom", "chalk"],
 };

@@ -103,7 +103,7 @@ class StyleSheetManager {
 }
 
 /**
- * Styled-Chroma Sheet Manager SSR And CSR
+ * StylrJs Sheet Manager
  * @returns The singleton instance of StyleSheetManager
  */
 export const styleSheetManager = new StyleSheetManager();

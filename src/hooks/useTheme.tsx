@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { Mode, SystemTheme, Theme, ThemeContextType } from "../types/local";
@@ -161,7 +160,6 @@ const ThemeProvider = ({
 
 export default ThemeProvider;
 
-// Adjust the useThemeMode function
 export const getThemeMode = (mode: "light" | "dark"): Theme => {
   if (mode === "light") {
     return systemTheme.defaultLightTheme;

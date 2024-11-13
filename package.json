@@ -1,6 +1,6 @@
 {
   "name": "stylrjs",
-  "version": "0.1.5",
+  "version": "0.1.51",
   "description": "A Lightweight CSS-In-JS library for React",
   "type": "module",
   "main": "dist/stylrjs.cjs.js",
@@ -16,13 +16,18 @@
   },
   "files": [
     "dist",
-    "dist/types"
+    "dist/types",
+    "scripts"
   ],
   "scripts": {
     "build": "rollup -c",
-    "postbuild": "copyfiles -u 1 src/types/**/* dist/",
+    "insert-client": "node scripts/insert-client.cjs",
+    "postbuild": "npm run insert-client",
     "prerelease": "npx tsc --noEmit",
     "release": "npm version patch && git push origin main --follow-tags"
+  },
+  "bin": {
+    "init": "./scripts/next-setup.cjs"
   },
   "repository": {
     "type": "git",
@@ -47,7 +52,6 @@
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-typescript": "^12.1.0",
     "@types/react": "^18.3.11",
-    "copyfiles": "^2.4.1",
     "rollup": "^4.24.0",
     "rollup-plugin-delete": "^2.1.0",
     "rollup-plugin-esbuild": "^6.1.1",
@@ -60,6 +64,7 @@
     "react-dom": "^18.0 || ^19.0"
   },
   "dependencies": {
+    "chalk": "^5.3.0",
     "csstype": "^3.1.3"
   }
 }
