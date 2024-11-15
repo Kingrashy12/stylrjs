@@ -3,7 +3,7 @@
 const { Command } = require("commander");
 const { existsSync, mkdirSync, writeFileSync } = require("fs-extra");
 const { join } = require("path");
-let chalk;
+const { default: customChalk } = require("./chalk");
 
 const program = new Command();
 
@@ -18,7 +18,7 @@ program
     const registryContentJs = `'use client';
 
 import { useServerInsertedHTML } from "next/navigation";
-import { renderStyles, StyleSheetManager } from "secptrum-ui";
+import { renderStyles, StyleSheetManager } from "stylrjs";
 
 const StylrJsRegistry = ({ children }) => {
   useServerInsertedHTML(() => {
@@ -42,7 +42,7 @@ StylrJsRegistry.displayName = "StylrJsRegistry";
     const registryContentTs = `'use client';
 
 import { useServerInsertedHTML } from "next/navigation";
-import { renderStyles, StyleSheetManager } from "secptrum-ui";
+import { renderStyles, StyleSheetManager } from "stylrjs";
 
 const StylrJsRegistry = ({ children }: { children: React.ReactNode }) => {
   useServerInsertedHTML(() => {
@@ -77,36 +77,30 @@ StylrJsRegistry.displayName = "StylrJsRegistry";
       isTypeScript ? "registry.tsx" : "registry.js"
     );
 
-    (async () => {
-      chalk = await import("chalk");
+    // Ensure the lib directory exists
+    if (!existsSync(libPath)) {
+      mkdirSync(libPath, { recursive: true });
+      console.log(customChalk.green(`\u2714 Created ${libPath} directory.`));
+    }
 
-      // Ensure the lib directory exists
-      if (!existsSync(libPath)) {
-        mkdirSync(libPath, { recursive: true });
-        console.log(
-          chalk.default.green(`\u2714 Created ${libPath} directory.`)
-        );
-      }
-
-      // Write the registry file if it doesn't exist
-      if (!existsSync(registryPath)) {
-        writeFileSync(
-          registryPath,
-          isTypeScript ? registryContentTs.trim() : registryContentJs.trim()
-        );
-        console.log(
-          `\r${chalk.default.green("\u2714")} Created ${
-            isTypeScript ? "registry.tsx" : "registry.js"
-          } in ${libPath}.\n`
-        );
-      } else {
-        console.log(
-          `\r${chalk.default.blue("\u2139")} ${
-            isTypeScript ? "registry.tsx" : "registry.js"
-          } already exists in ${libPath}, skipping.\n`
-        );
-      }
-    })();
+    // Write the registry file if it doesn't exist
+    if (!existsSync(registryPath)) {
+      writeFileSync(
+        registryPath,
+        isTypeScript ? registryContentTs.trim() : registryContentJs.trim()
+      );
+      console.log(
+        `\r${customChalk.green("\u2714")} Created ${
+          isTypeScript ? "registry.tsx" : "registry.js"
+        } in ${libPath}.\n`
+      );
+    } else {
+      console.log(
+        `\r${customChalk.blue("\u2139")} ${
+          isTypeScript ? "registry.tsx" : "registry.js"
+        } already exists in ${libPath}, skipping.\n`
+      );
+    }
   });
 
 program.parse(process.argv);

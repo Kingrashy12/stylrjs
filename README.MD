@@ -25,6 +25,8 @@
 
 - [Installation](#installation)
 - [Features](#features)
+- [Why Use StylrJS](#why-use-stylrjs)
+- [NextJs Setup](#nextjs-setup)
 - [Usage](#usage)
 - [Using With Types](#using-with-types)
 - [Exported Types](#exported-types)
@@ -59,6 +61,105 @@ yarn add stylrjs
 - Filters invalid props from being passed to the DOM
 - Supports dynamic styling based on props
 
+## Why Use StylrJS?
+
+StylrJS offers a modern, efficient, and intuitive approach to styling your applications. Here are some key reasons to choose StylrJS:
+
+### 1. **Automatic Prop Filtering and Conversion**
+
+- Props not recognized by React (e.g., `variant`) are automatically converted into valid `data-*` attributes (e.g., `data-variant`), ensuring clean and valid HTML while preventing unnecessary props from being passed to the DOM.
+
+### 2. **TypeScript-Friendly**
+
+- Fully compatible with TypeScript, providing type definitions for all HTML elements.
+- Supports type-safe custom props, ensuring a seamless development experience.
+
+### 3. **Minimal Learning Curve**
+
+- If you're familiar with CSS and JavaScript, getting started with StylrJS is straightforward.
+- Leverages tagged template literals, making it easy to write styles in a familiar syntax.
+
+### 4. **Component-Centric Styling**
+
+- Encourages styling directly within components, enhancing cohesion and maintainability.
+- Avoids global CSS conflicts by scoping styles to specific components.
+
+### 5. **Custom Component Styling**
+
+- Easily style third-party or custom React components while preserving their original props.
+- Integrates seamlessly into both functional and class components.
+
+### 6. **Dynamic Styling**
+
+- Write dynamic styles using props, enabling conditional and reusable styles.
+- Simplifies styling logic by co-locating styles with components.
+
+### 7. **Lightweight and Performant**
+
+- Optimized for performance, ensuring minimal runtime overhead.
+- Produces highly efficient, scoped CSS without bloating your app.
+
+### 8. **Next.js Compatibility**
+
+- StylrJS currently uses a `StylrJsRegistry` component to collect and render styles for server-side rendering (SSR).
+- This approach ensures styles are correctly included during the initial server-side render of your application.
+- **Coming Soon:** The registry process will be handled automatically, making SSR integration even more seamless.
+
+## NextJs Setup
+
+StylrJs comes with a CLI tool to streamline setting up your project with Next.js.
+
+1. **Initialize StylrJs Registry**
+
+Run the following command to generate the required setup files:
+
+```bash
+npx stylrjs init
+```
+
+This command will create a `StylrJsRegistry` component and add it to your project at `lib/registry.js` or `lib/registry.tsx` file.
+
+2. **Import StylrJsRegistry into your root layout**
+
+Next, import the `StylrJsRegistry` component in your `layout.js` or `layout.tsx` file:
+
+- `app/layout` for App Router
+- `src/layout` for Pages Router
+
+- **TypeScript**
+
+```bash
+import StylrJsRegistry from '@/lib/registry';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" >
+      <body>
+        <StylrJsRegistry>{children}</StylrJsRegistry>
+      </body>
+    </html>
+  );
+}
+```
+
+- **JavaScript**
+
+```bash
+import StylrJsRegistry from '@/lib/registry';
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <StylrJsRegistry>{children}</StylrJsRegistry>
+      </body>
+    </html>
+  );
+}
+```
+
+> **Note:** When using the `styled` API in the Next.js App Router, you must include the `'use client'` directive at the top of the file. No need to worry about style glitches—StylrJs ensures smooth styling across your app.
+
 ## Usage
 
 Basic example:
@@ -77,9 +178,9 @@ const Button = styled("button")`
 export default Button;
 ```
 
-## Using With Types
+## Using StylrJS with TypeScript
 
-StylrJS is fully compatible with TypeScript and provides type definitions for all HTML elements. Here's how you can use it with types:
+StylrJS is fully compatible with TypeScript and provides type definitions for all HTML elements. Here's how you can use it effectively with types:
 
 1. Basic usage with inferred types:
 
@@ -98,9 +199,9 @@ const Button = styled("button")`
 2. Extending HTML element props:
 
 ```tsx
-import { styled } from "stylrjs";
+import { styled, ButtonProps } from "stylrjs";
 
-interface CustomButtonProps {
+interface CustomButtonProps extends ButtonProps {
   isActive?: boolean;
 }
 
@@ -150,7 +251,11 @@ const StyledCustomComponent = styled<StyledCustomComponentProps>(
 </StyledCustomComponent>;
 ```
 
-By leveraging TypeScript with StylrJS, you get full type checking for your styled components, including autocomplete for HTML attributes and custom props.
+### Why Use TypeScript with StylrJS?
+
+- **Type Safety**: Prevent runtime errors with compile-time checks.
+- **Autocomplete Support**: Get IntelliSense for HTML attributes and custom props.
+- **Enhanced Readability**: Clearly define props for components, improving code maintainability.
 
 ## Exported Types
 
